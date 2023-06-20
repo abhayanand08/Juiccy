@@ -34,6 +34,7 @@ router.post("/create-user", upload.single('avatar'),async (req, res, next) =>{
       name: name,
       email: email,
       password: password,
+      avatar: fileUrl,
     };
 
     console.log(user); 

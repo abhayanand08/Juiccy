@@ -23,10 +23,10 @@ export default function Register() {
 
        const config = {headers: {"Content-Type" : "multipart/form-data"}} ;
        const form = new FormData();
-       form.append("avatar", avatar);
        form.append("name",name);
        form.append("email",email);
        form.append("password",password);
+       form.append("avatar", avatar);
 
         axios.post(`${server}/user/create-user`, form, config).then((res) => {
             console.log(res);
@@ -86,8 +86,8 @@ export default function Register() {
               name='avatar' 
               placeholder='Upload a file' 
               className='input-image' 
-              required
               accept=".jpg,.jpeg,.png"
+              value={avatar}
               onChange={handleFileInputChange}/>
                
               <button type='sumbit'>Register</button>
