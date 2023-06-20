@@ -1,0 +1,175 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://img.freepik.com/free-photo/close-up-view-dark-fresh-roasted-coffee-beans-coffee-beans-background_141793-27283.jpg?w=900&t=st=1686819897~exp=1686820497~hmac=c75140bae07d69d4a822f134d0c7c3a213792f60ed0cfc7bcdc4b6a27b48cfb8');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 70vw;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card .rightside{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background-color: #fff;
+}
+.container .card .rightside img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .card .leftside{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 0.8rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card .leftside .heading{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.card .leftside .heading h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.card .leftside form{
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card .leftside input{
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    width: 100%;
+    background-color: #ebecf0;
+    /* background-color: #ecf6ff; */
+    margin-bottom: 18px;
+    font-family: 'Poppins' , sans-serif;
+    border-radius: 7px;
+    border: 1.5px solid #F0F2F2;
+    border: none;
+    color: #000;
+}
+::placeholder{
+    color: #9b9da2;
+}
+.card .leftside form p{
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+.card .leftside form button{
+    width: 100%;
+    margin-top: 25px;
+    padding: 1rem 2rem;
+    font-family: 'Poppins' , sans-serif;
+    /* background-color: #FBDD8B; */
+    background-color: #050407;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.3rem;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.card .leftside form .forgot{
+    width: 100%;
+    text-align: end;
+}
+.card .leftside form .forgot p{
+    margin-top: 0;
+}
+.card .leftside form a{
+    text-decoration: none;
+    color: #1778f2;
+}
+@media screen and (max-width: 1280px) {
+    .container .card{
+        width: 80vw;
+    }
+    .card .leftside .heading h2{
+        font-size: 2rem;
+    }
+    .card .leftside .heading p{
+        font-size: 0.8rem;
+    }
+    .card .leftside form p{
+        margin-top: 14px;
+        font-size: 0.85rem;
+    }
+}
+@media screen and (max-width: 995px){
+    .card{
+        flex-direction: column;
+    }
+    .card .leftside .heading p{
+        font-size: 1rem;
+    }
+    .container .card .rightside, .container .card .leftside{
+        width: 100%;
+    }
+    .container .card .rightside{
+        max-height: 150px;
+        height: 140px;
+    }
+    .card .leftside form p{
+        font-size: 1.2rem;
+    }
+} 
+@media screen and (max-width: 620px){
+    .card .leftside form p{
+        font-size: 0.9rem;
+    }
+    .card .leftside .heading p{
+        font-size: 0.86rem;
+    }
+    .container .card .leftside{
+        padding: 0.8rem;
+    }
+    .card .leftside input, .card .leftside form button{
+        font-size: 0.9rem;
+    }
+    
+}
+@media screen and (max-width: 460px){
+    .card .leftside .heading h2{
+        font-size: 1.55rem;
+    }
+    .card .leftside form p{
+        font-size: 0.68rem;
+    }
+    .card .leftside .heading p{
+        font-size: 0.68rem;
+    }
+}
