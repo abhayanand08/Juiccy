@@ -1,12 +1,15 @@
+import { Link, useNavigate } from 'react-router-dom'
 import {React, useState} from 'react'
 import {registerbg,registerbg1} from '../../images'
-
 import '../Register/Register.css'
-import { Link } from 'react-router-dom'
 import axios from 'axios' 
 import { server } from '../../server'
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Register() {
+
+    const navigate = useNavigate();
    
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
@@ -28,10 +31,20 @@ export default function Register() {
        form.append("password",password);
        form.append("avatar", avatar);
 
-        axios.post(`${server}/user/create-user`, form, config).then((res) => {
-            console.log(res);
-        }).catch((err) =>{
-          console.log(err);
+        axios.post(`${server}/user/create-user`, form, config)
+        .then((res) => {
+
+          alert(res.data.message)
+
+          setName("");
+          setEmail("");
+          setPassword("");
+          setAvatar();
+
+          navigate('/login')
+
+        }).catch((error) =>{
+          alert(error.response.data.message);
         })
       };
 
@@ -87,7 +100,6 @@ export default function Register() {
               placeholder='Upload a file' 
               className='input-image' 
               accept=".jpg,.jpeg,.png"
-              value={avatar}
               onChange={handleFileInputChange}/>
                
               <button type='sumbit'>Register</button>
