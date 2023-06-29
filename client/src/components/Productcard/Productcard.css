@@ -1,0 +1,103 @@
+.productcard-main{
+    width: 300px;
+    height: max-content;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 1.2rem;
+    position: relative;
+    cursor: pointer;
+}
+.productcard{
+    display: flex;
+    justify-content: end;
+}
+.productcard-main .imgbox{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+.productcard-main .shop-name{
+    font-size: 1rem;
+    color: #999999;
+    font-weight: 600;
+}
+.productcard-main a{
+    text-decoration: none;
+    color: #000;
+}
+.productcard-main .productname{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.price-detail{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+.price-detail h4{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.price-detail h5{
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: red;
+    text-decoration: line-through;
+}
+.other-detail{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.other-detail h5{
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+.other-detail .review-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    padding: 2px 5px;
+    width: 56px;
+    border-radius: 6px;
+    color: #fff;
+}
+.other-detail .review-box h3{
+    font-weight: 500;
+    font-size: 1rem;
+    margin-right: 3px;
+}
+.heartimg{
+    position: absolute;
+    cursor: pointer;
+    top: 8%;
+    right: 12%;
+}
+.addcart{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.addcart button{
+    display: flex;
+    gap: 8px;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.95rem;
+    background-color: #2f2f2f;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    border: none;
+}
+.addcart button .cart{
+    font-size: 1.1rem;
+}
+.addcart button h4{
+    font-weight: 400;
+}

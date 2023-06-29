@@ -1,0 +1,229 @@
+nav{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #201E1F;
+}
+
+.left-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-side .menu-bar{
+    font-size: 2rem;
+    display: none;
+}
+.left-side h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+}
+.middle-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle-side .list-items .nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-items li{
+    list-style: none;
+    margin: 0 28px;
+}
+.list-items .nav-links .other-item{
+    display: none;
+}
+.list-items li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-side .search-bar{
+    width: 350px;
+    display: flex;
+    padding: 0 0.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1.2px solid #fff;
+    border-radius: 6px;
+}
+.right-side .search-bar .search-icon{
+   font-size: 1.55rem;
+   color: #000;
+}
+.right-side .search-bar input{
+   width: 100%;
+   padding: 0.5rem 0.5rem;
+   border: none;
+   font-size: 1rem;
+   font-family: 'Poppins', sans-serif;
+   background: none;
+   color: #000;
+}
+.right-side .search-bar input:focus{
+    outline: none;
+}
+.right-side .nav-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 0 20px;
+    font-size: 2rem;
+}
+.nav-icons .navicon{
+    margin: 0 5px;
+    cursor: pointer;
+}
+.nav-icons img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 0 5px;
+}
+.nav-icons a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-palette{
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    padding: 1.2rem;
+    min-width: 500px;
+    min-height: max-content;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+}
+.search-palette a{
+    text-decoration: none;
+    color: #fff;
+}
+.product-detail{
+    display: flex;
+    padding: 0.2rem 0;
+    justify-content: start;
+    align-items: center;
+}
+.product-detail h2{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.product-image{
+    width: 46px;
+    height: 46px;
+    margin: 0 10px;
+}
+@media screen and (max-width:1334px){
+    .right-side .search-bar{
+        width: 250px;
+    }
+    .right-side .search-bar input{
+        font-size: 0.85rem;
+    }
+    .right-side .search-bar .search-icon{
+        font-size: 1.25rem;
+    }
+    .list-items li a{
+        font-size: 1rem;
+    }
+    .list-items li{
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width:1138px){
+    .left-side h2{
+        font-size: 1.6rem;
+    }
+    .list-items li a{
+        font-size: 0.88rem;
+    }
+    .list-items li{
+        margin: 0 15px;
+    }
+}
+@media screen and (max-width:946px){
+    .right-side .menu-bar{
+        display: block;
+    }
+    .middle-side .list-items .nav-links{
+        display: none;
+    }
+    .right-side .nav-icons .navicon{
+        display: none;
+    }
+    .right-side .search-bar{
+        width: 400px;
+    }
+    .middle-side .list-items .nav-links-mobile{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 10;
+        align-items: center;
+        top: 75px;
+        left: 0;
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+        background-color: #201E1F;
+    }
+    .middle-side .list-items .nav-links-mobile li{
+        margin: 1.5rem;
+    }
+    .middle-side .list-items .nav-links-mobile li a{
+        font-size: 1.15rem;
+    }
+    .list-items .nav-links .other-item{
+        display: block;
+    }
+}
+@media screen and (max-width:660px){
+    .right-side .search-bar{
+        width: 300px;
+    }
+}
+@media screen and (max-width:518px){
+    .right-side .search-bar{
+        width: 220px;
+    }
+    .right-side .search-bar input{
+        font-size: 0.75rem;
+    }
+    .right-side .search-bar .search-icon{
+        font-size: 1.15rem;
+    }
+    .nav-icons img{
+        display: none;
+    }
+}
+@media screen and (max-width:440px){
+    .right-side .search-bar{
+        width: 140px;
+    }
+    .right-side .search-bar input{
+        font-size: 0.7rem;
+    }
+    .right-side .search-bar .search-icon{
+        font-size: 1rem;
+    }
+}

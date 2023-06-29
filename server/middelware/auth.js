@@ -1,10 +1,10 @@
-import User from "../model/user";
-import ErrorHandler from "../utils/Errorhandler";
-import jwt from "jsonwebtoken";
-import catcherror from "./catcherror";
+const ErrorHandler = require('../utils/Errorhandler')
+const jwt = require('jsonwebtoken')
+const catcherror = require('./catcherror')
+const User = require('../model/user')
 
 
-exports.isAuthenticated = catcherror(async(req,res,next) => {
+const isAuthenticated = catcherror(async(req,res,next) => {
     const {token} = req.cookies;
 
     if(!token){
@@ -17,3 +17,5 @@ exports.isAuthenticated = catcherror(async(req,res,next) => {
 
     next();
 });
+
+module.exports = isAuthenticated;

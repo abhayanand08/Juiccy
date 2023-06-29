@@ -1,0 +1,104 @@
+.main-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    background: url('../../assets//demobg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+    padding: 5rem;
+}
+.left-part{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 50%;
+    justify-content: center;
+}
+.left-part h2{
+    font-size: 4rem;
+    color: #201E1F;
+    font-weight: 700;
+}
+.left-part p{
+    font-size: 1.2rem;
+}
+.left-part a{
+    width: max-content;
+}
+.left-part button{
+    padding: 1.2rem 3.5rem;
+    color: #000;
+    border: 2px solid #201E1F;
+    font-size: 1.3rem;
+    margin-top: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.left-part button:hover{
+    background: #201E1F;
+    color: #fff;
+    transform: rotateZ(-5deg);
+
+}
+.right-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.right-part img{
+    width: 450px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+@media screen and (max-width: 1200px){
+    .left-part h2{
+        font-size: 2.8rem;
+    }
+    .left-part p{
+        font-size: 1rem;
+    }
+    .right-part img{
+        width: 350px;
+    }
+}
+@media screen and (max-width: 948px){
+    .main-about{
+        flex-direction: column-reverse;
+        padding: 2.5rem;
+    }
+    .left-part{
+        padding: 3.5rem 2rem;
+        width: 100%;
+        align-items: center;
+    }
+    .right-part{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 520px){
+    .main-about{
+        padding: 2rem;
+    }
+    .left-part{
+        padding: 3.5rem 0;
+    }
+}
+@media screen and (max-width: 480px){
+    .left-part h2{
+        font-size: 2.2rem;
+    }
+    .left-part p{
+        font-size: 0.85rem;
+    }
+    .right-part img{
+        width: 270px;
+    }
+}

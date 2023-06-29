@@ -1,0 +1,58 @@
+.parentdiv{
+    width: 100%;
+    height: max-content;
+    padding: 3rem;
+    background-color: #f2f2f2;
+}
+.categories-main{
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    padding: 1.5rem;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.section-cat{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.cat-heading h2{
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+.section-cat .cat-first{
+    display: flex;
+    padding: 1.5rem;
+    height: 320px;
+    flex-direction: column-reverse;
+    cursor: pointer;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-cat .cat-first h5{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #000;
+    margin-top: 15px;
+}
+.section-cat .cat-first img{
+    width: 220px;
+    object-fit: cover;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+@media screen and (max-width: 440px) {
+    .cat-heading h2{
+        font-size: 2.2rem;
+    }
+    .parentdiv{
+        padding: 1.5rem;
+    }
+}

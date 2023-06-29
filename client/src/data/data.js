@@ -1,27 +1,3 @@
-// navigation Data
-export const navItems = [
-    {
-      title: "Home",
-      url: "/",
-    },
-    {
-      title: "About",
-      url: "/about",
-    },
-    {
-      title: "Products",
-      url: "/products",
-    },
-    {
-      title: "Contact",
-      url: "/contact",
-    },
-    {
-      title: "FAQ",
-      url: "/faq",
-    },
-  ];
-  
   // branding data
   export const brandingData = [
     {
@@ -191,72 +167,69 @@ export const navItems = [
   export const categoriesData = [
     {
       id: 1,
-      title: "Computers and Laptops",
+      title: "Coffee",
       subTitle: "",
-      image_Url:
-        "https://cdn.shopify.com/s/files/1/1706/9177/products/NEWAppleMacbookProwithM1ProChip14InchLaptop2021ModelMKGQ3LL_A_16GB_1TBSSD_custommacbd.jpg?v=1659592838",
+      image_Url:"https://images.unsplash.com/photo-1587080413959-06b859fb107d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29mZmVlJTIwY3VwfGVufDB8fDB8fHww&w=1000&q=80",
     },
     {
       id: 2,
-      title: "cosmetics and body care",
+      title: "Masala Tea",
       subTitle: "",
       image_Url:
-        "https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2021-07/kosme1.png",
+        "https://wallpaperaccess.com/full/5872329.jpg",
     },
     {
       id: 3,
-      title: "Accesories",
+      title: " Masala Coke",
       subTitle: "",
-      image_Url:
-        "https://img.freepik.com/free-vector/ordering-goods-online-internet-store-online-shopping-niche-e-commerce-website-mother-buying-babies-clothes-footwear-toys-infant-accessories_335657-2345.jpg?w=2000",
+      image_Url:'https://spicecravings.com/wp-content/uploads/2022/06/Masala-Coke-Featured.jpg'
     },
     {
       id: 4,
-      title: "Cloths",
+      title: "Blue Lagoon",
       subTitle: "",
-      image_Url:
-        "https://www.shift4shop.com/2015/images/industries/clothing/clothing-apparel.png",
+      image_Url:'https://www.acouplecooks.com/wp-content/uploads/2021/03/Blue-Lagoon-Cocktail-007s.jpg'
     },
     {
       id: 5,
-      title: "Shoes",
+      title: "Cocktail",
       subTitle: "",
       image_Url:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvBQPQMVNRd6TtDkGs2dCri0Y-rxKkFOiEWw&usqp=CAU",
+        "https://img.freepik.com/free-photo/red-iced-cocktail-table_140725-9712.jpg?w=2000",
     },
     {
       id: 6,
-      title: "Gifts",
+      title: "Shakes",
       subTitle: "",
       image_Url:
-        "https://securecdn.pymnts.com/wp-content/uploads/2014/11/Gifts-Photo-700x489.jpg",
+        "https://images.unsplash.com/photo-1594488506255-a8bbfdeedbaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWlsa3NoYWtlfGVufDB8fDB8fHww&w=1000&q=80",
     },
     {
       id: 7,
-      title: "Pet Care",
+      title: "Lassi",
       subTitle: "",
-      image_Url: "https://cdn.openpr.com/T/c/Tc15444071_g.jpg",
+      image_Url: "https://tastedrecipes.com/wp-content/uploads/2022/07/Coconut-Lassi-3.jpg",
     },
     {
       id: 8,
-      title: "Mobile and Tablets",
+      title: "Mocktails",
       subTitle: "",
       image_Url:
-        "https://st-troy.mncdn.com/mnresize/1500/1500/Content/media/ProductImg/original/mpwp3tua-apple-iphone-14-256gb-mavi-mpwp3tua-637986832343472449.jpg",
+        "https://c0.wallpaperflare.com/preview/659/749/256/beverage-citru-cocktail-glass.jpg",
     },
     {
       id: 9,
-      title: "Music and Gaming",
+      title: "Fruit & Veg. Juice",
       subTitle: "",
       image_Url:
-        "https://static.vecteezy.com/system/resources/previews/011/996/555/original/3d-black-headphone-illustration-ecommerce-icon-png.png",
+        "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8anVpY2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
     },
     {
       id: 10,
       title: "Others",
       subTitle: "",
       image_Url:
-        "https://searchspring.com/wp-content/uploads/2022/10/Hero-Image-Platform-Others-2.png",
+        "https://img.freepik.com/free-photo/selection-orange-juices-other-drinks-table_1340-23698.jpg",
     },
   ];
   
@@ -264,113 +237,113 @@ export const navItems = [
   export const productData = [
     {
       id: 1,
-      category:"Computers and Laptops",
-      name: "MacBook pro M2 chipset 256gb ssd 8gb ram space-gray color with apple 1 year warranty",
+      category:"Coffee",
+      name: "Cappuccino",
       description:
-        "Product details are a crucial part of any eCommerce website or online marketplace. These details help the potential customers to make an informed decision about the product they are interested in buying. A well-written product description can also be a powerful marketing tool that can help to increase sales.Product details typically include information about the product's features, specifications, dimensions, weight, materials, and other relevant information that can help customers to understand the product better. The product details section should also include high-quality images and videos of the product, as well as customer reviews and ratings.",
+      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.',
       image_Url: [
         {
           public_id: "test",
-          url: "https://www.istorebangladesh.com/images/thumbs/0000286_macbook-pro-m1_550.png",
+          url: "https://www.acouplecooks.com/wp-content/uploads/2021/12/Mocha-Cappuccino-004.jpg",
         },
         {
           public_id: "test",
-          url: "https://www.istorebangladesh.com/images/thumbs/0000286_macbook-pro-m1_550.png",
+          url: "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps37407_THE1213734_37407_WEB.jpg",
         },
       ],
       shop: {
-        name: "Apple inc.",
+        name: "Cafe Coffee Day",
         shop_avatar: {
           public_id: "test",
-          url: "https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png",
+          url: "https://logotaglines.com/wp-content/uploads/2021/06/Cafe-Coffee-Day-Logo-slogan-tagline-founder.png",
         },
-        ratings: 4.2,
+        ratings: 4.5,
       },
-      price: 1099,
-      discount_price: 1049,
-      rating: 4,
-      total_sell: 35,
-      stock: 10,
+      price: 110,
+      discount_price: 100,
+      rating: 4.5,
+      total_sell: 4600,
+      stock: 20,
     },
     {
       id: 2,
-      category:"Mobile and Tablets",
-      name: "Iphone 14 pro max 256 gb ssd and 8 gb ram silver colour",
+      category:"Tea",
+      name: "Masala Tea",
       description:
-        "Product details are a crucial part of any eCommerce website or online marketplace. These details help the potential customers to make an informed decision about the product they are interested in buying. A well-written product description can also be a powerful marketing tool that can help to increase sales.Product details typically include information about the product's features, specifications, dimensions, weight, materials, and other relevant information that can help customers to understand the product better. The product details section should also include high-quality images and videos of the product, as well as customer reviews and ratings.",
+      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.',
       image_Url: [
         {
           public_id: "test",
-          url: "https://m.media-amazon.com/images/I/31Vle5fVdaL.jpg",
+          url: "https://simmertoslimmer.com/wp-content/uploads/2022/10/Masala-Chai-Tea.jpg",
         },
         {
           public_id: "test",
-          url: "https://m.media-amazon.com/images/I/31Vle5fVdaL.jpg",
+          url: "https://t1.uc.ltmcdn.com/en/posts/0/0/3/how_to_make_an_indian_masala_chai_tea_from_scratch_3300_orig.jpg",
         },
       ],
       shop: {
-        name: "Amazon Ltd",
+        name: "Chai Sutta Bar",
         shop_avatar: {
           public_id: "test",
-          url: "https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png",
+          url: "https://www.chaisuttabarindia.com/wp-content/uploads/2022/04/Chai-Sutta-Bar2.png",
         },
-        ratings: 4.2,
+        ratings: 4.4,
       },
-      discount_price: 1099,
-      rating: 5,
-      total_sell: 80,
-      stock: 10,
-      category:"Mobile & Tablets"
+      price: 140,
+      discount_price: 120,
+      rating: 4.4,
+      total_sell: 8000,
+      stock: 20,
     },
     {
       id: 1,
-      category:"Computers and Laptop",
-      name: "MacBook pro M2 chipset 256gb ssd 8gb ram space gray color with apple 1 year warranty",
+      category:"Mocktails",
+      name: "Virgin Mojito",
       description:
-        "Product details are a crucial part of any eCommerce website or online marketplace. These details help the potential customers to make an informed decision about the product they are interested in buying. A well-written product description can also be a powerful marketing tool that can help to increase sales.Product details typically include information about the product's features, specifications, dimensions, weight, materials, and other relevant information that can help customers to understand the product better. The product details section should also include high-quality images and videos of the product, as well as customer reviews and ratings.",
+      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.',
       image_Url: [
         {
           public_id: "test",
-          url: "https://www.istorebangladesh.com/images/thumbs/0000286_macbook-pro-m1_550.png",
+          url: "https://aromaticessence.co/wp-content/uploads/2022/05/virhin_mojito_featured.jpg",
         },
         {
           public_id: "test",
-          url: "https://www.istorebangladesh.com/images/thumbs/0000286_macbook-pro-m1_550.png",
+          url: "https://fullofplants.com/wp-content/uploads/2021/05/easy-virgin-mojito-alcohol-free-kid-friendly-refreshing-drink-thumb.jpg",
         },
       ],
       shop: {
-        name: "Apple inc.",
+        name: "Novelty Restaurant",
         shop_avatar: {
           public_id: "test",
-          url: "https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png",
+          url: "https://logos.flamingtext.com/City-Logos/Novelty-Water-Logo.png",
         },
-        ratings: 4.2,
+        ratings: 4.1,
       },
-      price: 1099,
-      discount_price: 1049,
-      rating: 4,
-      total_sell: 75,
+      price: 350,
+      discount_price: 300,
+      rating: 4.1,
+      total_sell: 750,
       stock: 10,
-      category:"Computers & Laptop"
+      category:"Mocktails",
     },
     {
       id: 4,
       category:"Others",
-      name: "New Fashionable Watch for men 2023 with multiple colors",
+      name: "New Special Drinks",
       description:
-        "Product details are a crucial part of any eCommerce website or online marketplace. These details help the potential customers to make an informed decision about the product they are interested in buying. A well-written product description can also be a powerful marketing tool that can help to increase sales.Product details typically include information about the product's features, specifications, dimensions, weight, materials, and other relevant information that can help customers to understand the product better. The product details section should also include high-quality images and videos of the product, as well as customer reviews and ratings.",
+      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.',
       image_Url: [
         {
           public_id: "test",
-          url: "https://i0.wp.com/eccocibd.com/wp-content/uploads/2022/01/1802NL02_1.png?fit=550%2C550&ssl=1",
+          url: "https://luxebook.in/wp-content/uploads/2021/03/Featured-Image-scaled.jpg",
         },
         {
           public_id: "test",
-          url: "https://i0.wp.com/eccocibd.com/wp-content/uploads/2022/01/1802NL02_1.png?fit=550%2C550&ssl=1",
+          url: "https://miro.medium.com/v2/resize:fit:1400/1*wRSrqe_WdsPsv4XdHDou6Q.jpeg",
         },
       ],
       shop: {
-        name: "Shahriar Watch House",
+        name: "79 Restro Bar",
         shop_avatar: {
           public_id: "test",
           url: "https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png",
@@ -379,68 +352,68 @@ export const navItems = [
       category:"Others"
       },
       price: 100,
-      discount_price: 79,
-      rating: 4,
-      total_sell: 12,
+      discount_price: 180,
+      rating: 4.2,
+      total_sell: 1200,
       stock: 10,
     },
     {
       id: 5,
-      category:"Shoes",
-      name: "New Trend shoes for gents with all sizes",
+      category:"Shakes",
+      name: "Vanilla & Chocolate Milkshakes",
       description:
-        "Product details are a crucial part of any eCommerce website or online marketplace. These details help the potential customers to make an informed decision about the product they are interested in buying. A well-written product description can also be a powerful marketing tool that can help to increase sales.Product details typically include information about the product's features, specifications, dimensions, weight, materials, and other relevant information that can help customers to understand the product better. The product details section should also include high-quality images and videos of the product, as well as customer reviews and ratings.",
+      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.',
       image_Url: [
         {
           public_id: "test",
-          url: "https://mirzacdns3.s3.ap-south-1.amazonaws.com/cache/catalog/RLV0015/2-800x800.jpg",
+          url: "https://www.unicornsinthekitchen.com/wp-content/uploads/2018/07/Vanilla-Milkshake-square-500x500.jpg",
         },
         {
           public_id: "test",
-          url: "https://mirzacdns3.s3.ap-south-1.amazonaws.com/cache/catalog/RLV0015/2-800x800.jpg",
+          url: "https://icecreamfromscratch.com/wp-content/uploads/2022/08/Chocolate-Milkshake-1.2-720x720.jpg",
         },
       ],
       shop: {
-        name: "Alisha Shoes Mart",
+        name: "Bhatia Milkshakes",
         shop_avatar: {
           public_id: "test",
           url: "https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png",
         },
-        ratings: 4.2,
+        ratings: 4.3,
       },
       price: 120,
-      discount_price: 89,
-      rating: 5,
-      total_sell: 49,
+      discount_price: 199,
+      rating: 4.3,
+      total_sell: 499,
       stock: 10,
-      category:"Shoes"
+      category:"Shakes"
     },
     {
       id: 1,
-      name: "Gaming Headphone Asus with mutiple color and free delivery",
+      name: "Lassi with nuts",
       description:
-        "Product details are a crucial part of any eCommerce website or online marketplace. These details help the potential customers to make an informed decision about the product they are interested in buying. A well-written product description can also be a powerful marketing tool that can help to increase sales.Product details typically include information about the product's features, specifications, dimensions, weight, materials, and other relevant information that can help customers to understand the product better. The product details section should also include high-quality images and videos of the product, as well as customer reviews and ratings.",
+      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.',
       image_Url: [
         {
           public_id: "test",
-          url: "https://www.startech.com.bd/image/cache/catalog/headphone/havit/h763d/h763d-02-500x500.jpg",
+          url: "https://static.toiimg.com/photo/58360232.cms",
         },
         {
           public_id: "test",
-          url: "https://eratablet.com/wp-content/uploads/2022/08/H51ba6537405f4948972e293927673546u.jpg",
+          url: "https://aromaticessence.co/wp-content/uploads/2022/05/rose_lassi_recipe_card.jpg",
         },
       ],
       shop: {
-        name: "Asus Ltd",
+        name: "Anand Restaurant",
         shop_avatar: {
           public_id: "test",
           url: "https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png",
         },
-        ratings: 4.2,
+        ratings: 4.8,
       },
-      price: 300,
-      discount_price: 239,
-      rating: 4.5,
+      price: 100,
+      discount_price: 139,
+      rating: 4.8,
       reviews: [
         {
           user: {
@@ -450,200 +423,147 @@ export const navItems = [
           rating: 5,
         },
       ],
-      total_sell: 20,
+      total_sell: 200,
       stock: 10,
-      category:"Music and Gaming"
+      category:"Lassi"
     },
     {
       id: 4,
-      name: "New Fashionable Watch for men 2023 with multiple colors",
+      name: "Masala coke with chilled ice",
+      category: 'Masala Coke',
       description:
-        "Product details are a crucial part of any eCommerce website or online marketplace. These details help the potential customers to make an informed decision about the product they are interested in buying. A well-written product description can also be a powerful marketing tool that can help to increase sales.Product details typically include information about the product's features, specifications, dimensions, weight, materials, and other relevant information that can help customers to understand the product better. The product details section should also include high-quality images and videos of the product, as well as customer reviews and ratings.",
+      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.',
       image_Url: [
         {
           public_id: "test",
-          url: "https://i0.wp.com/eccocibd.com/wp-content/uploads/2022/01/1802NL02_1.png?fit=550%2C550&ssl=1",
+          url: "https://spicecravings.com/wp-content/uploads/2022/06/Masala-Coke-Steps-6.jpg",
         },
         {
           public_id: "test",
-          url: "https://i0.wp.com/eccocibd.com/wp-content/uploads/2022/01/1802NL02_1.png?fit=550%2C550&ssl=1",
+          url: "https://www.spoonforkandfood.com/wp-content/uploads/2022/03/png_20220326_134233_0000-683x1024.png",
         },
       ],
       shop: {
-        name: "Shahriar Watch House",
+        name: "Blue Diamond Restaurant",
         shop_avatar: {
           public_id: "test",
           url: "https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png",
         },
-        ratings: 4.2,
+        ratings: 4.7,
       },
-      price: 100,
-      discount_price: 79,
-      rating: 4,
-      total_sell: 62,
+      price: 140,
+      discount_price: 190,
+      rating: 4.7,
+      total_sell: 1600,
       stock: 10,
     },
     {
       id: 1,
-      name: "Gaming Headphone Asus with mutiple color and free delivery",
+      name: "Long island cocktail",
+      category: 'Cocktail',
       description:
-        "Product details are a crucial part of any eCommerce website or online marketplace. These details help the potential customers to make an informed decision about the product they are interested in buying. A well-written product description can also be a powerful marketing tool that can help to increase sales.Product details typically include information about the product's features, specifications, dimensions, weight, materials, and other relevant information that can help customers to understand the product better. The product details section should also include high-quality images and videos of the product, as well as customer reviews and ratings.",
+      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.',
       image_Url: [
         {
           public_id: "test",
-          url: "https://www.startech.com.bd/image/cache/catalog/headphone/havit/h763d/h763d-02-500x500.jpg",
+          url: "https://www.supergoldenbakes.com/wordpress/wp-content/uploads/2019/07/Long_island_iced_tea-1-4s.jpg",
         },
         {
           public_id: "test",
-          url: "https://eratablet.com/wp-content/uploads/2022/08/H51ba6537405f4948972e293927673546u.jpg",
+          url: "https://i.guim.co.uk/img/media/899f4700a61a9ee02a0f1dea371fb046d1907c73/0_3027_8656_5193/master/8656.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=6bc62bd9ef53a2379ba46240d9b72b97",
         },
       ],
       shop: {
-        name: "Asus Ltd",
+        name: "Junction Restaurant",
         shop_avatar: {
           public_id: "test",
           url: "https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png",
         },
-        ratings: 4.2,
+        ratings: 4.9,
       },
       price: 300,
-      discount_price: 239,
-      rating: 4.5,
+      discount_price: 439,
+      rating: 4.9,
       reviews: [
         {
           user: {
             // user object will be here
           },
-          comment: "IT's so cool!",
-          rating: 5,
+          comment: "IT's so refreshing!",
+          rating: 4.8,
         },
       ],
-      total_sell: 20,
+      total_sell: 200,
       stock: 10,
     },
     {
       id: 2,
-      category:"Mobile and Tablets",
-      name: "Iphone 14 pro max 256 gb ssd and 8 gb ram silver colour",
+      category:"Blue lagoon",
+      name: "Blue Lagoon Mocktail",
       description:
-        "Product details are a crucial part of any eCommerce website or online marketplace. These details help the potential customers to make an informed decision about the product they are interested in buying. A well-written product description can also be a powerful marketing tool that can help to increase sales.Product details typically include information about the product's features, specifications, dimensions, weight, materials, and other relevant information that can help customers to understand the product better. The product details section should also include high-quality images and videos of the product, as well as customer reviews and ratings.",
+      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.',
       image_Url: [
         {
           public_id: "test",
-          url: "https://m.media-amazon.com/images/I/31Vle5fVdaL.jpg",
+          url: "https://www.crowdedkitchen.com/wp-content/uploads/2022/01/Blue-Lagoon-Mocktail-8.jpg",
         },
         {
           public_id: "test",
-          url: "https://m.media-amazon.com/images/I/31Vle5fVdaL.jpg",
+          url: "https://savortheflavour.com/wp-content/uploads/2020/07/Blue-Lagoon-Mocktail-Tasty.jpg",
         },
       ],
       shop: {
-        name: "Amazon Ltd",
+        name: "Novelty Restaurant",
         shop_avatar: {
           public_id: "test",
-          url: "https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png",
+          url: "https://logos.flamingtext.com/City-Logos/Novelty-Water-Logo.png",
         },
         ratings: 4.2,
       },
-      discount_price: 1099,
+      price:145,
+      discount_price:240,
       rating: 5,
-      total_sell: 20,
+      total_sell: 2000,
       stock: 10,
     },
     {
       id: 1,
-      category:"Music and Gaming",
-      name: "Gaming Headphone Asus with mutiple color and free delivery",
+      category:"Mocktail",
+      name: "Soft Drink",
       description:
-        "Product details are a crucial part of any eCommerce website or online marketplace. These details help the potential customers to make an informed decision about the product they are interested in buying. A well-written product description can also be a powerful marketing tool that can help to increase sales.Product details typically include information about the product's features, specifications, dimensions, weight, materials, and other relevant information that can help customers to understand the product better. The product details section should also include high-quality images and videos of the product, as well as customer reviews and ratings.",
+      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.',
       image_Url: [
         {
           public_id: "test",
-          url: "https://www.startech.com.bd/image/cache/catalog/headphone/havit/h763d/h763d-02-500x500.jpg",
+          url: "https://img.freepik.com/free-vector/realistic-soda-with-ice-advertisement_52683-8078.jpg?w=2000",
         },
         {
           public_id: "test",
-          url: "https://eratablet.com/wp-content/uploads/2022/08/H51ba6537405f4948972e293927673546u.jpg",
+          url: "https://img.freepik.com/free-vector/soft-drink-ad_52683-8500.jpg?w=2000",
         },
       ],
       shop: {
-        name: "Asus Ltd",
+        name: "Double Down Pub & Bar",
         shop_avatar: {
           public_id: "test",
           url: "https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png",
         },
-        ratings: 4.2,
+        ratings: 3.9,
       },
       price: 300,
-      discount_price: 239,
-      rating: 4.5,
+      discount_price: 439,
+      rating: 3.9,
       reviews: [
         {
           user: {
             // user object will be here
           },
-          comment: "IT's so cool!",
-          rating: 5,
+          comment: "It's so awesome & tasty!",
+          rating: 4.5,
         },
       ],
-      total_sell: 20,
+      total_sell: 2000,
       stock: 10,
-    },
-  ];
-  
-  export const footerProductLinks = [
-    {
-      name: "About us",
-      link: "/about"
-    },
-    {
-      name: "Careers",
-      link: "/carrers"
-    },
-    {
-      name: "Store Locations",
-    },
-    {
-      name: "Our Blog",
-    },
-    {
-      name: "Reviews",
-    },
-  ];
-  
-  export const footercompanyLinks = [
-    {
-      name: "Game & Video",
-    },
-    {
-      name: "Phone &Tablets",
-    },
-    {
-      name: "Computers & Laptop",
-    },
-    {
-      name: "Sport Watches",
-    },
-    {
-      name: "Events",
-    },
-  ];
-  
-  export const footerSupportLinks = [
-    {
-      name: "FAQ",
-    },
-    {
-      name: "Reviews",
-    },
-    {
-      name: "Contact Us",
-    },
-    {
-      name: "Shipping",
-    },
-    {
-      name: "Live chat",
     },
   ];
   

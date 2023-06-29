@@ -1,0 +1,23 @@
+.profile-main{
+    display: flex;
+    background: #f2f2f2;
+    padding: 4rem;
+    width: 100%;
+    height: max-content;
+}
+.profile-sidebar{
+    width: 300px;
+}
+@media screen and (max-width:946px){
+  .profile-sidebar{
+    width: max-content;
+  }
+  .profile-main{
+    padding: 2.5rem;
+  }
+}
+@media screen and (max-width:510px){
+    .profile-main{
+        padding: 1.23rem;
+    }
+}

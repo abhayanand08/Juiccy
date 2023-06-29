@@ -1,0 +1,38 @@
+.bestdeal-main{
+    width: 100%;
+    height: max-content;
+    background: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), url('https://w.forfun.com/fetch/04/04f68ddf31c2d972274cf17f4a082de4.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+.bestdeal-main .heading-bestdeal{
+    font-size: 2rem;
+    width: 100%;
+    text-align: start;
+    color: #fff;
+    font-weight: 100;
+}
+.section-bestdeal{
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+@media screen and (max-width: 500px) {
+    .bestdeal-main .heading-bestdeal{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 400px){
+    .bestdeal-main .heading-bestdeal{
+        font-size: 1.3rem;
+    }
+}

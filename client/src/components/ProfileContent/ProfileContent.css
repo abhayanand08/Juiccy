@@ -1,0 +1,109 @@
+.profilecontent-main{
+   width: 100%;
+}
+.profile-body{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.profile-info{
+    position: relative;
+}
+.profilepg-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid red;
+    padding: 0.5rem;
+}
+.change-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+.change-img button{
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    background-color: #000;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+}
+.profile-detail{
+    width: 100%;
+    padding: 1.5rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.one-line{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 0;
+}
+.each-field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+.each-field label{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.each-field input{
+    padding: 0.7rem 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    width: 80%;
+}
+.update-btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 12px;
+}
+.update-btn button{
+    padding: 1rem 3.5rem;
+    color: #fff;
+    background-color: #000;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    border: none;
+}
+
+@media screen and (max-width:1325px){
+    .each-field input{
+        width: 95%;
+        padding: 0.5rem 1.2rem;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:946px){
+   .one-line{
+    flex-direction: column;
+   }
+   .each-field{
+    width: 100%;
+   }
+}
+@media screen and (max-width:510px){
+    .each-field input{
+        width: 100%;
+    }
+    .profilepg-img{
+        width: 140px;
+        height: 140px;
+    }
+}

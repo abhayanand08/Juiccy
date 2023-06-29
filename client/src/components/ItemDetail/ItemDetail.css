@@ -1,0 +1,248 @@
+.item-main{
+    background-color: #f2f2f2;
+}
+.item-parent{
+    width: 100%;
+    height: max-content;
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.rightpart-item{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+.main-image{
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.main-image img{
+    height: 520px;
+    border-radius: 8px;
+}
+.other-image{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.other-image .selected-img{
+    border: 2px solid #000;
+    height: max-content;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.other-image .unselected-img{
+    border: 2px solid transparent;
+    height: max-content;
+    padding: 1rem;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.smaller-img{
+    height: 140px;
+    width: 120px;
+}
+.leftpart-item{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+}
+.leftpart-item h1{
+    font-size: 3rem;
+}
+.leftpart-item p{
+   font-size: 1.2rem;
+}
+.leftpart-item .priceitem{
+    display: flex;
+    margin-top: 15px;
+}
+.priceitem h3{
+    font-size: 1.8rem;
+}
+.priceitem h4{
+    font-size: 1.48rem;
+    margin: 0 10px;
+    color: red;
+    text-decoration: line-through;
+}
+.other-items{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.increm-box{
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    margin: 8px 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #000;
+}
+.increm-icon{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.other-items p{
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 30px;
+    text-align: center;
+}
+.addcartitem{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.addcartitem button{
+    display: flex;
+    gap: 10px;
+    padding: 1.3rem 3rem;
+    font-size: 0.95rem;
+    background-color: #2f2f2f;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    /* align-items: center; */
+    border: none;
+}
+.addcartitem button .cart{
+    font-size: 1.7rem;
+}
+.addcartitem button h4{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+.shop-detail{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.shop-detail h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: 8px;
+}
+.shop-info{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.shop-detail .shop-info img{
+    width: 80px;
+    height: 80px;
+    border: 1.2px solid #000;
+    padding: 3px;
+    border-radius: 50%;
+}
+.shop-info h4{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.rating-item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.rating-item h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: 8px;
+}
+.rating-item .review-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    background-color: green;
+    padding: 0.8rem 1.5rem;
+    color: #fff;
+    border-radius: 8px;
+    gap: 6px;
+}
+.rating-item .review-box h4{
+    font-size: 1.35rem;
+    font-weight: 400;
+}
+.rating-item .review-box .star{
+    font-size: 1.5rem;
+}
+@media screen and (max-width:946px) {
+    .item-parent{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .rightpart-item{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem;
+    }
+    .leftpart-item{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .leftpart-item{
+        padding: 0.5rem;
+    }
+    .leftpart-item p{
+        font-size: 1rem;
+    }
+    .leftpart-item h1{
+        font-size: 2.5rem;
+    }
+    .item-parent{
+        padding: 1rem;
+    }
+    .main-image img{
+        border-radius: 15px;
+    }
+}
+@media screen and (max-width:400px) {
+    .main-image img{
+        height: 400px;
+    }
+    .smaller-img{
+        width: 80px;
+        height: 100px;
+    }
+    .leftpart-item p{
+        font-size: 0.88rem;
+    }
+    .leftpart-item h1{
+        font-size: 2rem;
+    }
+    .addcartitem button{
+        padding: 1rem 1.5rem;
+    }
+    .addcartitem button .cart{
+        font-size: 1.3rem;
+    }
+    .addcartitem button h4{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}

@@ -12,7 +12,7 @@ app.use(cors({
     origin: "http://localhost:3000",
     credentials : true,
 }))
-app.use('/', express.static('uploads'))
+app.use('/', express.static('images-user'))
 app.use(bodyparser.urlencoded({extended: true, limit:'60mb'}))
 app.use("/test", (req, res) => {
     res.send("Hello world!");

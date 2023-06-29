@@ -1,0 +1,7 @@
+.poster-main{
+   width: 100%;
+   height: 100vh;
+   background: url('https://m.media-amazon.com/images/I/61RC1ENOJtS.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}

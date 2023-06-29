@@ -4,10 +4,12 @@ import { server } from "../../server";
 import axios from "axios";
 import '../Login/Login.css';
 import { Link, useNavigate } from 'react-router-dom';
+import { useSelector } from "react-redux";
 
 const Login = () => {
 
   const navigate = useNavigate();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -20,7 +22,7 @@ const Login = () => {
         {
           email,
           password,
-        },
+        },{withCredentials:true}
       )
       .then((res) => {
         alert("Login Success!");
@@ -28,7 +30,7 @@ const Login = () => {
         window.location.reload(true); 
       })
       .catch((err) => {
-        alert(err.response.data.message);
+        // alert(err.response.data.message);
       });
   };
 

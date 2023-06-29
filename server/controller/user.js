@@ -9,6 +9,7 @@ const jwt = require('jsonwebtoken');
 const sendMail = require('../utils/activationmail');
 const sendToken = require('../utils/jwtToken');
 const Errorhandler = require('../utils/Errorhandler');
+const isAuthenticated = require('../middelware/auth')
 
 
 
@@ -151,22 +152,40 @@ router.post('/login-user', catcherror(async(req,res,next) => {
     }
 }));
 
-// router.get('/getuser', isAuthenticated, catcherror(async (req, res, next) => {
-//       try {
-//         const user = await User.findById(req.user.id);
+router.get('/getuser', isAuthenticated ,catcherror(async (req, res, next) => {
+      try {
+        const user = await User.findById(req.user.id);
   
-//         if (!user) {
-//           return next(new Errorhandler("User doesn't exists", 400));
-//         }
+        if (!user) {
+          return next(new Errorhandler("User doesn't exists", 400));
+        }
   
-//         res.status(200).json({
-//           success: true,
-//           user,
-//         });
-//       } catch (error) {
-//         return next(new Errorhandler(error.message, 500));
-//       }
-//     })
-//   );
+        res.status(200).json({
+          success: true,
+          user,
+        });
+      } catch (error) {
+        return next(new Errorhandler(error.message, 500));
+      }
+    })
+  );
+
+  router.get(
+    "/logout",
+    catcherror(async (req, res, next) => {
+      try {
+        res.cookie("token", null, {
+          expires: new Date(Date.now()),
+          httpOnly: true,
+        });
+        res.status(201).json({
+          success: true,
+          message: "Log out successful!",
+        });
+      } catch (error) {
+        return next(new Errorhandler(error.message, 500));
+      }
+    })
+  );
 
 module.exports = router;
