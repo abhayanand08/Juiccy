@@ -7,12 +7,10 @@ import { loadUser } from './redux/actions/UserAction';
 import Loginpg from './pages/Layout/Loginpg';
 import ProductDetailsPage from './pages/ProductDetailsPage/ProductDetailsPage';
 import Profile from './pages/Profile/Profile';
-import ProtectedRoute from './ProtectedRoute';
-import { useSelector } from 'react-redux';
+import FaqPage from './pages/Layout/FaqPage';
 
 function App() {
 
-  const {isAuthenticated} = useSelector((state) => state.user);
   
   useEffect(() =>{
         Store.dispatch(loadUser());
@@ -26,7 +24,7 @@ function App() {
       <Route path='/register' element={<Register />} />
       <Route path='/activation/:activation_token' element={<Activation />}  />
       <Route path='/product/:name' element={<ProductDetailsPage />} />
-
+      <Route path='/faqs' element={<FaqPage />} />
       <Route path='/profile' element={<Profile />} />
 
     </Routes>
