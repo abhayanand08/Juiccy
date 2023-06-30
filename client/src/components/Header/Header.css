@@ -88,6 +88,10 @@ nav{
     margin: 0 5px;
     cursor: pointer;
 }
+.nav-icons .navicon-cart-icon{
+    margin: 0 5px;
+    cursor: pointer;
+}
 .nav-icons img{
     width: 40px;
     height: 40px;
@@ -171,6 +175,12 @@ nav{
     .right-side .nav-icons .navicon{
         display: none;
     }
+    .nav-icons img{
+        display: none;
+    }
+    .right-side .nav-icons{
+        margin: 0 10px;
+    }
     .right-side .search-bar{
         width: 400px;
     }
@@ -211,9 +221,6 @@ nav{
     }
     .right-side .search-bar .search-icon{
         font-size: 1.15rem;
-    }
-    .nav-icons img{
-        display: none;
     }
 }
 @media screen and (max-width:440px){

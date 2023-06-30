@@ -19,9 +19,18 @@
 }
 .change-img{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 8px;
+}
+.change-img input{
+    visibility: visible;
+}
+.change-img label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .change-img button{
     padding: 0.6rem 1.2rem;
@@ -32,6 +41,7 @@
     font-size: 1rem;
     font-weight: 400;
     border: none;
+    cursor: pointer;
 }
 .profile-detail{
     width: 100%;

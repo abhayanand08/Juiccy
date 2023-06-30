@@ -19,10 +19,10 @@ const Productcard = ({data}) => {
   const addToCart = (id) => {
     const isItemExists = cart && cart.find((i) => i.id === id);
     if(isItemExists){
-      alert("Item already in cart")
+      alert("Already added in Cart")
     }else{
       dispatch(addTocart({...data,qty: count}))
-      alert('Item added to cart')
+      alert('Added to Cart')
     }
   }
 

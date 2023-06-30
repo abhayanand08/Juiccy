@@ -19,3 +19,38 @@ export const loadUser = () => async(dispatch) => {
         })
     }
 }
+
+export const updateUserInformation =
+    (name, email, phoneNumber, password) => async (dispatch) => {
+    try {
+      dispatch({
+        type: "updateUserInfoRequest",
+      });
+
+      const { data } = await axios.put(
+        `${server}/user/update-user-info`,
+        {
+          email,
+          password,
+          phoneNumber,
+          name,
+        },
+        {
+          withCredentials: true,
+          headers: {
+            "Access-Control-Allow-Credentials": true,
+          },
+        }
+      );
+
+      dispatch({
+        type: "updateUserInfoSuccess",
+        payload: data.user,
+      });
+    } catch (error) {
+      dispatch({
+        type: "updateUserInfoFailed",
+        payload: error.response.data.message,
+      });
+    }
+};

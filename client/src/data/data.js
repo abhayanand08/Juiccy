@@ -296,7 +296,7 @@
       stock: 20,
     },
     {
-      id: 1,
+      id: 3,
       category:"Mocktails",
       name: "Virgin Mojito",
       description:
@@ -389,7 +389,7 @@
       category:"Shakes"
     },
     {
-      id: 1,
+      id: 6,
       name: "Lassi with nuts",
       description:
       'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.',
@@ -428,7 +428,7 @@
       category:"Lassi"
     },
     {
-      id: 4,
+      id: 7,
       name: "Masala coke with chilled ice",
       category: 'Masala Coke',
       description:
@@ -458,7 +458,7 @@
       stock: 10,
     },
     {
-      id: 1,
+      id: 8,
       name: "Long island cocktail",
       category: 'Cocktail',
       description:
@@ -497,7 +497,7 @@
       stock: 10,
     },
     {
-      id: 2,
+      id: 9,
       category:"Blue lagoon",
       name: "Blue Lagoon Mocktail",
       description:
@@ -527,7 +527,7 @@
       stock: 10,
     },
     {
-      id: 1,
+      id: 10,
       category:"Mocktail",
       name: "Soft Drink",
       description:

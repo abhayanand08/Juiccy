@@ -7,6 +7,7 @@ import Categories from '../../components/Categories/Categories';
 import BestDeals from '../../components/BestDeals/BestDeals';
 import Otherproduct from '../../components/OtherProducts/Otherproduct';
 import Poster from '../../components/Poster/Poster';
+import Footer from '../../components/Footer/Footer';
 
 
 function Homepage() {
@@ -19,7 +20,7 @@ function Homepage() {
         <BestDeals />
         <Poster />
         <Otherproduct />
-
+        <Footer />
     </div>
   )
 }

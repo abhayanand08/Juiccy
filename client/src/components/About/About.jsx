@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
-    <div className='main-about'>
+    <div className='main-about' id='about'>
         <div className="left-part">
           <h2>What We Serve</h2>
           <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.

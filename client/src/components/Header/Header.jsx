@@ -7,6 +7,7 @@ import {LuUtensilsCrossed} from 'react-icons/lu';
 import {productData} from '../../data/data'
 
 import {Link} from 'react-router-dom';
+import { HashLink} from 'react-router-hash-link';
 import { useSelector } from 'react-redux';
 import { backened_url } from '../../server';
 import Cart from '../Cart/Cart';
@@ -47,10 +48,10 @@ const Header = () => {
             <div className="list-items">
                 <ul className= {menu ? 'nav-links' : 'nav-links-mobile'} onClick={() => setmenu(true)}>
                     <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/about'>About</Link></li>
+                    <li><HashLink smooth to='#about'>About</HashLink></li>
+                    <li><HashLink smooth to='#drinks'>Drinks</HashLink></li>                    
                     <li><Link to='/faqs'>FAQs</Link></li>
-                    <li><Link to='/contact'>Contact</Link></li>
-                    <li className='other-item'><Link to='/cart'>Cart</Link></li>
+
                     <li className='other-item'><Link to='/profile'>Profile</Link></li>
                 </ul>
               </div>
@@ -83,7 +84,7 @@ const Header = () => {
               </div>
             ) : null}
               <div className="nav-icons">
-               <BiCart className='navicon' onClick={() => setOpenCart(true)}/>
+               <BiCart className='navicon-cart-icon' size={35} onClick={() => setOpenCart(true)}/>
                {isAuthenticated ? (
                <Link to='/profile'>
                 <img src={`${backened_url}${user?.avatar}`} alt='' className='profile-img'/>

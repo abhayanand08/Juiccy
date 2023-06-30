@@ -8,7 +8,7 @@ export const addTocart = (data) => async (dispatch, getState) => {
     return data;
   };
 
-  export const removeFromCart = (data) => async (dispatch, getState) => {
+  export const removeFromcart = (data) => async (dispatch, getState) => {
     dispatch({
       type: "removeFromCart",
       payload: data.id,

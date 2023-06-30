@@ -29,12 +29,12 @@ const ItemDetail = ({data}) => {
   const addToCarthandler = (id) => {
     const isItemExists = cart && cart.find((i) => i._id === id);
     if(isItemExists){
-        alert("Item already in cart")
+        alert("Already added in Cart")
         console.log(data.price)
     }else{
         const cartData = { ...data, qty: count };
         dispatch(addTocart(cartData));
-        alert('Item added to cart')
+        alert('Added to cart')
     }
   }
 

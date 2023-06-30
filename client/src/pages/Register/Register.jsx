@@ -9,14 +9,6 @@ import { useSelector } from 'react-redux'
 export default function Register() {
 
     const navigate = useNavigate();
-
-    const { isAuthenticated } = useSelector((state) => state.user);
-  
-    useEffect(() => {
-      if(isAuthenticated){
-        navigate('/');
-      }
-    },[])
    
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
@@ -47,8 +39,8 @@ export default function Register() {
           setEmail("");
           setPassword("");
           setAvatar();
-
           navigate('/login')
+          alert('Please Check Your Email for the activation link')
 
         }).catch((error) =>{
           // alert(error.response.data.message);

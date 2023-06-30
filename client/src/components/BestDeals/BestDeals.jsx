@@ -9,13 +9,13 @@ const BestDeals = () => {
     const [data, setData] = useState([]);
     
     useEffect(() => {
-    const d = productData && productData.sort((a,b) => b.total_sell - a.total_sell);
+    const d = productData && productData.sort((a,b) => a.total_sell - b.total_sell);
     const firstfive = d.slice(0,5);
     setData(firstfive);
     }, []);
 
   return (
-    <div>
+    <div id='BestDeals'>
       <div className='bestdeal-main'>
         <div className='heading-bestdeal'>
           <h1>Best Deals</h1>

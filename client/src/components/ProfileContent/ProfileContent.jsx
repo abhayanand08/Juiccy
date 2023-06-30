@@ -1,16 +1,46 @@
 import React, { useState } from 'react'
 import '../ProfileContent/ProfileContent.css'
-import { backened_url } from '../../server'
-import { useSelector } from 'react-redux';
+import { backened_url, server } from '../../server'
+import { useDispatch, useSelector } from 'react-redux';
+import { loadUser, updateUserInformation } from '../../redux/actions/UserAction';
+import axios from 'axios';
 
 const ProfileContent = ({active}) => {
   const {user} = useSelector((state) => state.user);
   const [name,setName] = useState(user && user?.name);
   const [email,setEmail] = useState(user && user?.email);
-  const [phoneNumber, setPhoneNumber] = useState();
-  const [zip, setZip] = useState();
-  const [address1, setAddress1] = useState("");
-  const [address2, setAddress2] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState(user && user.phoneNumber);
+  const [password, setPassword] = useState("");
+  const [avatar, setAvatar] = useState(null);
+  const dispatch = useDispatch();
+
+  const handleSumbit = (e) => {
+   e.preventDefault();
+   dispatch(updateUserInformation(name, email, phoneNumber, password));
+  }
+
+//   const ImagechangeHandler = async(e) => {
+//    const img = e.target.files[0];
+//    setAvatar(img);
+//    const form = new FormData();
+
+//    form.append("avatar", e.target.files[0]);
+
+//     await axios
+//       .put(`${server}/user/update-avatar`, form, {
+//         headers: {
+//           "Content-Type": "multipart/form-data",
+//         },
+//         withCredentials: true,
+//       })
+//       .then((response) => {
+//          dispatch(loadUser());
+//          alert("Profile image updated");
+//       })
+//       .catch((error) => {
+//         alert(error);
+//       });
+//   }
 
   
   return (
@@ -22,13 +52,14 @@ const ProfileContent = ({active}) => {
              <div className="profile-info">
                 <img src={`${backened_url}${user?.avatar}`} alt="" className='profilepg-img'/>
                 <div className="change-img">
-                  <button>Change image</button>
+                 <button type='update'>Change image</button>
+                  {/* <input type='file' id='avatar'/> */}
                 </div>
              </div>
           </div>
 
           <div className="profile-detail">
-            <form>
+            <form onSubmit={handleSumbit} aria-required={true}>
 
              <div className="one-line">
               <div className="each-field">
@@ -49,19 +80,8 @@ const ProfileContent = ({active}) => {
               </div>
 
               <div className="each-field">
-                 <label>Zip Code</label>
-                 <input type='number' required value={zip} onChange={(e) => setZip(e.target.value)} />
-              </div>
-             </div>
-
-             <div className="one-line">
-              <div className="each-field">
-                 <label>Address 1</label>
-                 <input type='text' required value={address1} onChange={(e) => setAddress1(e.target.value)} />
-              </div>
-              <div className="each-field">
-                 <label>Address 2</label>
-                 <input type='text' required value={address2} onChange={(e) => setAddress2(e.target.value)} />
+                 <label>Password</label>
+                 <input type='password' required value={password} onChange={(e) => setPassword(e.target.value)} />
               </div>
              </div>
               

@@ -37,7 +37,7 @@ router.post("/create-user", upload.single('avatar'),async (req, res, next) =>{
     if(useremail){
 
         const imgname = req.file.filename
-        const imgpath = `images-user/${imgname}`
+        const imgpath = `../images-user/${imgname}`
         fs.unlink(imgpath, (err) => {
             if(err){
                 console.log(err)
@@ -170,9 +170,7 @@ router.get('/getuser', isAuthenticated ,catcherror(async (req, res, next) => {
     })
   );
 
-  router.get(
-    "/logout",
-    catcherror(async (req, res, next) => {
+router.get("/logout", catcherror(async (req, res, next) => {
       try {
         res.cookie("token", null, {
           expires: new Date(Date.now()),
@@ -186,6 +184,64 @@ router.get('/getuser', isAuthenticated ,catcherror(async (req, res, next) => {
         return next(new Errorhandler(error.message, 500));
       }
     })
-  );
+);
 
+router.put("/update-user-info", isAuthenticated, catcherror(async (req, res, next) => {
+      try {
+        const { email, password, phoneNumber, name } = req.body;
+  
+        const user = await User.findOne({ email }).select("+password");
+  
+        if (!user) {
+          return next(new Errorhandler("User not found", 400));
+        }
+  
+        const isPasswordValid = await user.comparePassword(password);
+  
+        if (!isPasswordValid) {
+          return next(
+            new Errorhandler("Please provide the correct information", 400)
+          );
+        }
+  
+        user.name = name;
+        user.email = email;
+        user.phoneNumber = phoneNumber;
+  
+        await user.save();
+  
+        res.status(201).json({
+          success: true,
+          user,
+        });
+      } catch (error) {
+        return next(new Errorhandler(error.message, 500));
+      }
+    })
+);
+
+
+// router.put("/update-avatar", isAuthenticated, upload.single('avatar'), catcherror(async (req, res, next) => {
+//     try {
+//       const existsUser = await User.findById(req.user.id);
+
+//       const existAvatarPath = `../images-user/${existsUser.avatar}`;
+
+//       fs.unlinkSync(existAvatarPath);
+
+//       const fileUrl = path.join(req.file.filename);
+
+//       const user = await User.findByIdAndUpdate(req.user.id, {
+//         avatar: fileUrl,
+//       });
+
+//       res.status(200).json({
+//         success: true,
+//         user,
+//       });
+//     } catch (error) {
+//       return next(new Errorhandler(error.message, 500));
+//     }
+//   })
+// );
 module.exports = router;

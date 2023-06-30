@@ -3,13 +3,28 @@ import { Link } from 'react-router-dom';
 import '../Productcardother/Productcardother.css';
 import {AiFillStar} from 'react-icons/ai';
 import {BsHeartFill, BsHeart, BsCart2} from 'react-icons/bs';
+import { useDispatch, useSelector } from 'react-redux';
+import { addTocart } from '../../redux/actions/cartAction';
 
 const Productcardother = ({data}) => {
 
   const [click, setClick] = useState(false);
+  const {cart} = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
 
   const d = data.name;
+  const count = 1;
   const product_name = d.replace(/\s+/g, '-');
+
+  const addToCart = (id) => {
+    const isItemExists = cart && cart.find((i) => i.id === id);
+    if(isItemExists){
+      alert("Already added in Cart")
+    }else{
+      dispatch(addTocart({...data,qty: count}))
+      alert('Added to Cart')
+    }
+  }
 
   return (
     <div className='productcard-mainoth'>
@@ -63,11 +78,11 @@ const Productcardother = ({data}) => {
           )}
     </div>
 
-     <div className="addcartoth">
-       <Link to='#'><button>
+     <div className="addcartoth" onClick={() => addToCart(data.id)}>
+        <button>
         <BsCart2 className='cartoth'/>
         <h4>Add To Cart</h4>
-       </button></Link>
+       </button>
      </div>
   </div>  
   )
