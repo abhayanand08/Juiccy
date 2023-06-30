@@ -60,22 +60,21 @@ cd client
        * SMPT_PASSWORD: ``` Your smpt password ```
 
 7. Start the development server
-
-> Goto to client directory and type the following command
-    * Client
-     ```bash
-     npm start
-     ```
-     or,
-     ```bash
-     yarn start
-     ```
-> Goto to server directory and type the following command
-    * Server
-     ```bash
-     npm run dev
-     ```
-
+> Goto to client directory and type the following command   
+* Client
+```bash
+npm start
+```
+or,
+```bash
+yarn start
+```      
+> Goto to server directory and type the following command   
+* Server
+```bash
+npm start
+```
+       
 ## Contributing
 Contributions are welcome! If you would like to contribute to this project, please follow these steps:
 1. Fork the repository.
