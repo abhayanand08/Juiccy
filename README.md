@@ -16,8 +16,16 @@ This project is related to the food industry (Juices, coffee, beverages, etc.). 
 6. **Editor** :-  VS Code
 
 ## Getting Started
-To work/contribute on this project follow the given steps as shown below
+To work/contribute on this project follow the given steps as shown below.
 
 ### Pre-requisites
-1. Must have installed Vs Code in your system.
+1. Must have installed [Vs Code](https://code.visualstudio.com/) in your system.
 2. Must have all the setup ready in [MongoDB Atlas](https://www.mongodb.com/atlas/database).
+
+### Installation
+1. Open your terminal/command prompt.
+2. Clone the repository by the following code.
+```bash
+git clone https://github.com/username/project.git
+```
+> Username: abhayanand08, Project: Juiccy
