@@ -29,3 +29,16 @@ To work/contribute on this project follow the given steps as shown below.
 git clone https://github.com/username/project.git
 ```
 > Username: abhayanand08, Project: Juiccy
+3. After cloning navigate to your project folder/directory.
+```bash
+cd Juiccy
+```
+4. Thereafter to the client directory
+```bash
+cd client
+```
+5. Now install the necessary dependencies
+   * For Windows: ```bash
+   npm install ```
+   * For MacOS:  ```bash
+     yarn install ```
