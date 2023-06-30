@@ -8,9 +8,9 @@ This project is related to the food industry (Juices, coffee, beverages, etc.). 
 3. **User Sign In/ Sign Up:** Users can create accounts, log in, and access personalized features and content and can also change their personal detail with the help of the password.
 
 ## TechStack Used
-1. **Front-end**:  React.js, HTML, CSS, Javascript
-2. **Back-end**:  Node.js, Express.js
-3. **Database**:  MongoDB
-4. **Others**:  bcryptjs, cookie-parser, jsonwebtoken, multer, nodemailer, @reduxjs/toolkit
-5. **API Testing**:  Postman
-6. **Editor**:  VS Code
+1. **Front-end** :  React.js, HTML, CSS, Javascript
+2. **Back-end** :  Node.js, Express.js
+3. **Database** :  MongoDB
+4. **Others** :  bcryptjs, cookie-parser, jsonwebtoken, multer, nodemailer, @reduxjs/toolkit
+5. **API Testing** :  Postman
+6. **Editor** :  VS Code
