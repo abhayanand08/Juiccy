@@ -34,11 +34,11 @@ git clone https://github.com/username/project.git
 ```bash
 cd Juiccy
 ```
-4. Thereafter to the client directory
+4. Thereafter to the client directory.
 ```bash
 cd client
 ```
-5. Now install the necessary dependencies
+5. Now install the necessary dependencies.
 
    * For Windows:
    ```bash
@@ -46,5 +46,29 @@ cd client
    ```
    * For MacOS:
    ```bash
-     yarn install
+   yarn install
    ```
+   
+6. Configure the environment variables in the server directory under config folder.
+
+    * Change the following data in the .env file.
+       * PORT: ``` 8000 ```
+       * DB_URL: ``` Your mongodb connection string ```
+       * SMPT_MAIL: ``` Your email id ```
+       * SMPT_PASSWORD: ``` Your smpt password ```
+
+7. Start the development server
+> Goto to client directory and type the following command
+   * Client
+     ```bash
+     npm start
+     ```
+     or,
+     ```bash
+     yarn start
+     ```
+> Goto to server directory and type the following command
+   * Server
+     ```bash
+     npm run dev
+     ```
