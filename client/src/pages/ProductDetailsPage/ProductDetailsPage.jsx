@@ -4,6 +4,7 @@ import Header from '../../components/Header/Header';
 import { useParams } from 'react-router-dom';
 import { productData } from '../../data/data';
 import ItemDetail from '../../components/ItemDetail/ItemDetail';
+import Footer from '../../components/Footer/Footer';
 
 
 const ProductDetailsPage = () => {
@@ -21,6 +22,7 @@ const ProductDetailsPage = () => {
     <div>
       <Header />
       <ItemDetail data={data}/>
+      <Footer />
     </div>
   )
 }

@@ -1,6 +1,6 @@
 footer{
     width: 100%;
-    height: 100vh;
+    height: max-content;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -10,19 +10,157 @@ footer{
 .toppart{
     display: flex;
     width: 100%;
-    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 2rem;
 }
 .leftside-footer{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 50%;
+    width: 40%;
+    padding-left: 2rem;
 }
 .leftside-footer h2{
     font-size: 4rem;
-
     font-weight: 500;
+}
+.leftside-footer h5{
+    font-size: 2.1rem;
+    font-weight: 400;
+    color: #2f2f2f;
+}
+.leftside-footer .social-icon{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    gap: 30px;
+}
+.social-icon .social-imgbox{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1.25px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.social-imgbox .social-img{
+    font-size: 2rem;
+}
+.social-icon .social-imgbox:hover{
+    transform: scale(1.1);
+    background-color: #000;
+    color: #fff;
+}
+.rightside-footer{
+    display: flex;
+    width: 60%;
+    padding: 3rem;
+    justify-content: space-between;
+}
+.rightside-footer .other-links{
+   display: flex;
+   flex-direction: column;
+   margin-right: 60px;
+}
+.other-links h3{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.other-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0.6rem;
+    list-style: none;
+}
+.other-links ul a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.25rem;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.address h3{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.address p{
+    font-size: 1.25rem;
+    width: 300px;
+    font-weight: 400;
+}
+.address h5{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.address h4{
+    font-size: 1.35rem;
+    font-weight: 400;
+}
+.bottompart{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.05rem;
+    margin-top: 40px;
+}
+.bottompart p{
+    text-align: center;
+}
+@media screen and (max-width:1190px) {
+    .other-links h3{
+        font-size: 1.50rem;
+    }
+    .address h3{
+        font-size: 1.50rem;
+    }
+    .address p{
+        font-size: 1.15rem;
+    }
+    .address h5{
+        font-size: 1.15rem;
+    }
+    .address h4{
+        font-size: 1.25rem;
+    }
+    .other-links ul a{
+        font-size: 1.15rem;
+    }
+    .leftside-footer h2{
+        font-size: 3rem;
+    }
+    .leftside-footer h5{
+        font-size: 1.50rem;
+    }
+    .social-icon .social-imgbox{
+        width: 50px;
+        height: 50px;
+    }
+    .social-imgbox .social-img{
+        font-size: 1.25rem;
+    }
+}
+@media screen and (max-width:1080px){
+    .toppart{
+        flex-direction: column;
+        gap: 40px;
+        padding: 0;
+    }
+    .rightside-footer{
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+        padding: 1rem;
+    }
+    .leftside-footer{
+        width: 100%;
+        padding: 1rem;
+    }
 }
