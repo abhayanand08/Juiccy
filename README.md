@@ -16,7 +16,7 @@ This project is related to the food industry (Juices, coffee, beverages, etc.). 
 6. **Editor** :-  VS Code
 
 ## Getting Started
-To work/contribute on this project follow the given steps as shown below.
+To work on this project follow the given steps as shown below.
 
 ### Pre-requisites
 1. Must have installed [Vs Code](https://code.visualstudio.com/) in your system.
@@ -34,10 +34,12 @@ git clone https://github.com/username/project.git
 ```bash
 cd Juiccy
 ```
+
 4. Thereafter to the client directory.
 ```bash
 cd client
 ```
+
 5. Now install the necessary dependencies.
 
    * For Windows:
@@ -58,8 +60,9 @@ cd client
        * SMPT_PASSWORD: ``` Your smpt password ```
 
 7. Start the development server
+
 > Goto to client directory and type the following command
-   * Client
+    * Client
      ```bash
      npm start
      ```
@@ -68,7 +71,20 @@ cd client
      yarn start
      ```
 > Goto to server directory and type the following command
-   * Server
+    * Server
      ```bash
      npm run dev
      ```
+
+## Contributing
+Contributions are welcome! If you would like to contribute to this project, please follow these steps:
+1. Fork the repository.
+2. Create a new branch for your feature/bug fix: ``` git checkout -b feature-name ```
+3. Commit your changes: ``` git commit 'Add some feature' ```
+4. Push to the branch: ``` git push origin feature-name ```
+5. Submit a pull request.
+
+## Contact
+If you have any questions or suggestions, feel free to contact.
+* Name: Abhay Anand
+* Email: [abhayanandjsr@gmail.com](mailto:user@example.com)
