@@ -72,7 +72,7 @@ yarn start
 > Goto to server directory and type the following command   
 * Server
 ```bash
-npm start
+npm run dev
 ```
        
 ## Contributing
