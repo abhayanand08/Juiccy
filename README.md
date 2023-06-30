@@ -1,4 +1,4 @@
-# **Juiccy - An online beverages delivery website**
+# **Juiccy - An online beverages website**
 ## Description
 This project is related to the food industry (Juices, coffee, beverages, etc.). It's a full stack web development project. It aims to create a responsive and dynamic webapp/website. This website offers a wide range of features and functionalities to enhance the user experience. Users can browse through a diverse selection of beverages, coffee, etc. and can add their favourite items in the cart along with the quantity needed. The website also allows users to see details of each item along with the ratings. Currently data of items are static.
 
@@ -8,9 +8,9 @@ This project is related to the food industry (Juices, coffee, beverages, etc.). 
 3. **User Sign In/ Sign Up:** Users can create accounts, log in, and access personalized features and content and can also change their personal detail with the help of the password.
 
 ## TechStack Used
-1. Front-end: React.js, HTML, CSS, Javascript
-2. Back-end: Node.js, Express.js
-3. Database: MongoDB
-4. Others: bcryptjs, cookie-parser, jsonwebtoken, multer, nodemailer, @reduxjs/toolkit
-5. API Testing: Postman
-6. Editor: VS Code
+1. **Front-end**:  React.js, HTML, CSS, Javascript
+2. **Back-end**:  Node.js, Express.js
+3. **Database**:  MongoDB
+4. **Others**:  bcryptjs, cookie-parser, jsonwebtoken, multer, nodemailer, @reduxjs/toolkit
+5. **API Testing**:  Postman
+6. **Editor**:  VS Code
