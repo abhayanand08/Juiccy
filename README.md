@@ -88,4 +88,4 @@ Contributions are welcome! If you would like to contribute to this project, plea
 ## Contact
 If you have any questions or suggestions, feel free to contact.
 * Name: Abhay Anand
-* Email: [abhayanandjsr@gmail.com](mailto:user@example.com)
+* Email: [abhayanandjsr@gmail.com](mailto:abhayanandjsr@gmail.com)
